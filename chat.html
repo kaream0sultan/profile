@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="chat-inner-body">
+    <div class="chat-header-pro">
+        <div class="header-icons">
+            <button class="icon-btn" id="nightModeBtn"><i class="fas fa-moon"></i></button>
+            <button class="icon-btn" id="searchToggleBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-title">Chat Me</div>
+    </div>
+
+    <div id="searchBar" class="search-bar-container">
+        <input type="text" id="searchInput" placeholder="ابحث في الرسائل...">
+    </div>
+
+    <div class="chat-main" id="chatMain">
+        <div id="messagesContainer"></div>
+    </div>
+
+    <div class="reply-preview" id="replyPreview">
+        <div class="reply-content">
+            <span id="replyUser"></span>
+            <p id="replyText"></p>
+        </div>
+        <i class="fas fa-times" id="cancelReplyBtn"></i>
+    </div>
+
+    <div class="chat-footer">
+        <div class="input-wrapper">
+            <input type="text" id="messageInput" placeholder="اكتب رسالة...">
+        </div>
+        <button id="sendBtn">➤</button>
+    </div>
+
+    <div id="contextMenu" class="context-menu">
+        <div class="menu-item" id="menuReply"><i class="fas fa-reply"></i> رد</div>
+        <div class="menu-item" id="menuDelete"><i class="fas fa-trash"></i> مسح</div>
+        <div class="menu-item owner-only" id="menuBlock"><i class="fas fa-ban"></i> حظر</div>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
